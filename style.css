@@ -1,0 +1,578 @@
+:root {
+    --forest-green: #22543D;
+    --teal: #38B2AC;
+    --charcoal-grey: #2D3748;
+    --light-grey: #F7FAFC;
+    --white: #FFFFFF;
+    --font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--charcoal-grey);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--forest-green);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--forest-green);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-leaf {
+    width: 8px;
+    height: 8px;
+    background-color: var(--teal);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 6px;
+}
+
+.logo-m {
+    width: 16px;
+    height: 10px;
+    border: 3px solid var(--teal);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--charcoal-grey);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--teal);
+}
+
+/* Hero Section */
+#hero {
+    background-color: var(--light-grey);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: var(--forest-green);
+    margin-bottom: 1rem;
+}
+
+#hero .subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* General Section Styling */
+section {
+    padding: 5rem 0;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--light-grey);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--forest-green);
+    margin-bottom: 3rem;
+}
+
+/* Mission Section */
+.mission-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.mission-box {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.mission-box h3 {
+    font-size: 1.5rem;
+    color: var(--teal);
+    margin-top: 0;
+}
+
+/* Approach Section */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.approach-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--teal);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.approach-card h4 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    color: var(--forest-green);
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 5px solid var(--forest-green);
+    transition: all 0.4s ease;
+}
+
+.project-card.flagship {
+    max-width: 900px;
+    border-top-width: 8px;
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    color: var(--teal);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-card h5 {
+    font-size: 1.2rem;
+    color: var(--forest-green);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-content {
+    line-height: 1.8;
+}
+
+.project-section {
+    margin-bottom: 1.5rem;
+}
+
+.project-section p {
+    margin-bottom: 1rem;
+}
+
+.solution-list,
+.outcomes-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.solution-list li,
+.outcomes-list li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.outcome-highlight {
+    background-color: var(--light-grey);
+    border-left: 4px solid var(--teal);
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    font-weight: 500;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(34, 84, 61, 0.15);
+}
+
+/* Collapsed Project Content */
+.project-card .project-content {
+    max-height: 180px;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.project-card .project-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--white));
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.project-card.expanded .project-content {
+    max-height: 2000px;
+}
+
+.project-card.expanded .project-content::after {
+    opacity: 0;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background: none;
+    border: 2px solid var(--teal);
+    color: var(--teal);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 178, 172, 0.3);
+}
+
+.learn-more-btn .arrow {
+    transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover .arrow {
+    transform: translateX(5px);
+}
+
+.project-card.expanded .learn-more-btn .arrow {
+    transform: rotate(90deg);
+}
+
+.project-card.expanded .learn-more-btn {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+/* Flagship project button spacing */
+.project-card.flagship .learn-more-btn {
+    margin-right: 1rem;
+}
+
+/* AI Tools Section */
+#ai-tools {
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+}
+
+.contact-details {
+    margin-top: 2rem;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin: 0.5rem auto;
+}
+
+.contact-info a {
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--forest-green);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--teal);
+}
+
+/* Footer */
+footer {
+    background-color: var(--charcoal-grey);
+    color: var(--light-grey);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-media-icons a {
+    color: var(--light-grey);
+    font-size: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: inline-block;
+}
+
+.social-media-icons a:hover {
+    color: var(--teal);
+    transform: translateY(-8px) scale(1.15);
+}
+
+/* Animations for growth & innovation theme */
+@keyframes growUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    animation: growUp 0.8s ease-out forwards;
+}
+
+.animate-on-scroll.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animate-on-scroll.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.animate-on-scroll.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Approach cards hover - innovation effect */
+.approach-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--teal);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.approach-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(56, 178, 172, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.approach-card:hover::before {
+    left: 100%;
+}
+
+.approach-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(34, 84, 61, 0.15);
+}
+
+/* Mission boxes - growth animation */
+.mission-box {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: var(--white);
+    transition: all 0.4s ease;
+}
+
+.mission-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(34, 84, 61, 0.1);
+    border-color: var(--teal);
+}
+
+/* Project card - sustainability pulse */
+.project-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 5px solid var(--forest-green);
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(34, 84, 61, 0.15);
+}
+
+/* CTA Button - innovation pulse */
+.cta-button {
+    display: inline-block;
+    background-color: var(--forest-green);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.cta-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.cta-button:hover {
+    background-color: var(--teal);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56, 178, 172, 0.4);
+}
+
+footer p {
+    margin: 0;
+}
