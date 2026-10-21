@@ -576,3 +576,223 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* ===== 2026 Landing Refresh Overrides ===== */
+.logo-container {
+    text-decoration: none;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 0.45rem;
+}
+
+.hero {
+    background: linear-gradient(140deg, #eef9f6 0%, #f7fafc 52%, #ffffff 100%);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+    color: var(--teal);
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(2.1rem, 4.8vw, 3.5rem);
+    line-height: 1.15;
+    margin: 0;
+}
+
+.subtitle {
+    margin: 1.2rem auto 0;
+    max-width: 700px;
+    color: #4a5568;
+}
+
+.services-section,
+.projects-section {
+    background-color: var(--light-grey);
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    text-align: center;
+    color: #4a5568;
+}
+
+.service-tabs-grid {
+    margin-top: 2.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+.service-tab-card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid var(--teal);
+    border-radius: 12px;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-tab-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(34, 84, 61, 0.12);
+}
+
+.service-tag {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.service-tab-card h3 {
+    margin: 0;
+    color: var(--forest-green);
+    font-size: 1.25rem;
+}
+
+.service-tab-card p {
+    margin: 0;
+    color: #4a5568;
+}
+
+.tab-link {
+    margin-top: auto;
+    color: var(--forest-green);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tab-link:hover {
+    color: var(--teal);
+}
+
+.service-tab-card.active {
+    border-color: #9fe1dd;
+    border-top-color: var(--forest-green);
+    box-shadow: 0 0 0 2px rgba(56, 178, 172, 0.22), 0 12px 28px rgba(34, 84, 61, 0.16);
+    transform: translateY(-4px);
+}
+
+.service-tab-card.active .service-tag,
+.service-tab-card.active h3,
+.service-tab-card.active .tab-link {
+    color: var(--forest-green);
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    width: 42px;
+    height: 40px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--forest-green);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.project-card.short {
+    max-width: none;
+    border-top: 4px solid var(--forest-green);
+}
+
+.project-card.short h4 {
+    margin: 0 0 0.5rem;
+    color: var(--forest-green);
+    font-size: 1.12rem;
+}
+
+.project-card.short p {
+    margin: 0;
+    color: #4a5568;
+}
+
+@media (max-width: 980px) {
+    header .container {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .site-nav {
+        width: 100%;
+        display: none;
+        margin-top: 0.8rem;
+    }
+
+    .site-nav.open {
+        display: block;
+    }
+
+    .site-nav .nav-list {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 0.9rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        background: #f8fbfd;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding: 4.5rem 0;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.88rem;
+    }
+}
