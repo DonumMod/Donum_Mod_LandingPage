@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donum Mod - Nurturing Potential. Growing Futures.</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Donum Mod | Nurturing Potential. Growing Futures.</title>
+    <meta name="description" content="Donum Mod connects practical services across general advisory, Insure-Fi, Complete Tech, and Agrihub.">
+    <link rel="stylesheet" href="style.css?v=20261021-1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
     <header>
         <div class="container">
-            <div class="logo-container">
+            <a class="logo-container" href="#home" aria-label="Donum Mod home">
                 <div class="logo-icon">
                     <div class="logo-leaf"></div>
                     <div class="logo-m"></div>
                 </div>
                 <span class="logo-text">Donum Mod</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#mission">Mission</a></li>
-                    <li><a href="#approach">Approach</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#ai-tools">Tech Tools</a></li>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav" class="site-nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#general">General</a></li>
+                    <li><a href="https://insurefi.donummod.com" target="_blank" rel="noopener noreferrer">Insure-Fi</a></li>
+                    <li><a href="https://completetech.donummod.com" target="_blank" rel="noopener noreferrer">Complete Tech</a></li>
+                    <li><a href="https://agrihub.donummod.com" target="_blank" rel="noopener noreferrer">Agrihub</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -34,149 +41,100 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="container">
-                <h1>Nurturing Potential. Growing Futures.</h1>
-                <p class="subtitle">Donum Mod is a catalyst for sustainable growth in communities, helping to unlock inherent potential through collaborative innovation.</p>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <p class="eyebrow">One brand. Multiple focused services.</p>
+                <h1>Nurturing Potential.<br>Growing Futures.</h1>
+                <p class="subtitle">Donum Mod brings together practical solutions across community development, financial planning, full-stack technology, and agricultural innovation.</p>
+                <a class="cta-button" href="#services">Explore Our Services <span class="arrow">&rarr;</span></a>
             </div>
         </section>
 
-        <section id="mission">
+        <section id="services" class="services-section">
             <div class="container">
-                <h2>Our Mission & Vision</h2>
-                <div class="mission-content">
-                    <div class="mission-box">
-                        <h3>Mission</h3>
-                        <p>To act as a catalyst for sustainable growth in communities. We partner with local leaders and residents to unlock their inherent potential, optimizing available resources and fostering a culture of collaborative innovation to solve complex challenges from the ground up.</p>
-                    </div>
-                    <div class="mission-box">
-                        <h3>Vision</h3>
-                        <p>We envision a world of vibrant, self-reliant communities where every person is empowered to build a prosperous and resilient future. Donum Mod strives to be the "Gift of a Leader"—not by leading from the front, but by cultivating the leader in everyone.</p>
-                    </div>
+                <h2>Service Tabs</h2>
+                <p class="section-intro">Choose the service area that best matches your goals.</p>
+                <div class="service-tabs-grid">
+                    <article class="service-tab-card active" data-service="general">
+                        <p class="service-tag">Core</p>
+                        <h3>General</h3>
+                        <p>Strategic support for community projects, partnerships, resource optimisation and leadership development.</p>
+                        <a class="tab-link" href="#general">View General Services <span>&rarr;</span></a>
+                    </article>
+
+                    <article class="service-tab-card" data-service="insurefi">
+                        <p class="service-tag">Financial</p>
+                        <h3>Insure-Fi</h3>
+                        <p>Financial protection, planning and goal-based consultation support for individuals, families and businesses.</p>
+                        <a class="tab-link" href="https://insurefi.donummod.com" target="_blank" rel="noopener noreferrer">Open Insure-Fi <span>&rarr;</span></a>
+                    </article>
+
+                    <article class="service-tab-card" data-service="completetech">
+                        <p class="service-tag">Technology</p>
+                        <h3>Complete Tech</h3>
+                        <p>End-to-end technology services covering data, software, hardware, robotics, AI and business-aligned execution.</p>
+                        <a class="tab-link" href="https://completetech.donummod.com" target="_blank" rel="noopener noreferrer">Open Complete Tech <span>&rarr;</span></a>
+                    </article>
+
+                    <article class="service-tab-card" data-service="agrihub">
+                        <p class="service-tag">Agriculture</p>
+                        <h3>Agrihub</h3>
+                        <p>Practical agriculture innovation focused on crop systems, livestock, learning, agri-tech and value-chain opportunity.</p>
+                        <a class="tab-link" href="https://agrihub.donummod.com" target="_blank" rel="noopener noreferrer">Open Agrihub <span>&rarr;</span></a>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="approach">
+        <section id="general" class="general-section">
             <div class="container">
-                <h2>Our Approach: The Living Ecosystem</h2>
+                <h2>General Services at Donum Mod</h2>
                 <div class="approach-grid">
-                    <div class="approach-card">
-                        <h4>Listen & Understand</h4>
-                        <p>True, sustainable solutions grow from a deep, shared understanding of a community's unique challenges, resources, and aspirations.</p>
-                    </div>
-                    <div class="approach-card">
-                        <h4>Build Local Capacity</h4>
-                        <p>We focus on empowerment through education and mentorship, equipping individuals with the skills and confidence to take ownership.</p>
-                    </div>
-                    <div class="approach-card">
-                        <h4>Foster Unity & Collaboration</h4>
-                        <p>We act as a unifying force, building bridges between community members, organizations, and advocates to create a powerful network for change.</p>
-                    </div>
-                    <div class="approach-card">
-                        <h4>Leverage & Innovate</h4>
-                        <p>We specialize in "resource optimization"—creatively leveraging existing assets and introducing modern tools to amplify strengths.</p>
-                    </div>
+                    <article class="approach-card">
+                        <h4>Community Strategy</h4>
+                        <p>Design practical growth plans with local stakeholders and measurable milestones.</p>
+                    </article>
+                    <article class="approach-card">
+                        <h4>Leadership & Capacity</h4>
+                        <p>Build local capability through mentorship, skills transfer and collaborative delivery models.</p>
+                    </article>
+                    <article class="approach-card">
+                        <h4>Resource Optimisation</h4>
+                        <p>Improve how existing assets, partnerships and systems are used for better outcomes.</p>
+                    </article>
+                    <article class="approach-card">
+                        <h4>Partnership Facilitation</h4>
+                        <p>Connect organisations, communities and service teams for aligned implementation.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects-section">
             <div class="container">
-                <h2>Our Projects</h2>
-                
-                <!-- Flagship Project -->
-                <div class="project-card flagship">
-                    <h4>Rural Resilience Initiative: Mixed Farming Mastery for Sustainable Prosperity</h4>
-                    <div class="project-content">
-                        <div class="project-section">
-                            <h5>The Challenge</h5>
-                            <p>In rural South Africa and similar regions, smallholder farms grapple with tough realities: climate-driven droughts and erratic rains, soil degradation from monoculture, volatile commodity markets that squeeze incomes, inefficient use of scarce water and inputs, and logistics challenges that lead to high post-harvest losses. These pressures often keep farms trapped in low-productivity cycles, threatening food security, family livelihoods, and community stability.</p>
-                        </div>
-                        <div class="project-section">
-                            <h5>Our Holistic Solution</h5>
-                            <p>We partnered directly with local farmers to build integrated <strong>mixed farming systems</strong> — combining crops (maize, vegetables, legumes) with livestock (poultry, goats, or cattle) for natural synergies: manure enriches soil, crop residues feed animals, and diversification spreads risk.</p>
-                            <p>Alongside this, we delivered practical, hands-on support across every area that makes a farm thrive:</p>
-                            <ul class="solution-list">
-                                <li><strong>Commodity trading education</strong> – teaching market analysis, pricing strategies, direct buyer linkages, and risk management so farmers sell smarter, not cheaper.</li>
-                                <li><strong>Resource optimisation</strong> – precision techniques for water conservation, soil health testing, and input efficiency to cut waste and costs.</li>
-                                <li><strong>Innovative landscaping & agroecology</strong> – contouring, agroforestry, and biodiversity designs that prevent erosion, improve microclimates, and restore ecosystems.</li>
-                                <li><strong>Logistics & supply chain management</strong> – cooperative storage, optimised transport routes, and inventory systems that get produce to market fresh and profitable.</li>
-                            </ul>
-                            <p>Everything was co-created with the community — blending local knowledge with modern tools — to ensure solutions are practical, scalable, and owned by the farmers themselves.</p>
-                        </div>
-                        <div class="project-section">
-                            <h5>Transformative Outcomes & Impact</h5>
-                            <ul class="outcomes-list">
-                                <li>Farms achieved <strong>40–60% higher productivity</strong> and diversified income streams, building real financial resilience.</li>
-                                <li><strong>Environmental wins:</strong> healthier soils, reduced water/chemical use, and greater climate adaptability for long-term land viability.</li>
-                                <li><strong>Stronger communities:</strong> farmer cooperatives now share knowledge, negotiate better deals, and support one another — with women and youth actively leading.</li>
-                                <li><strong>Scalable innovation:</strong> replicable models that neighbouring farms are already adopting, turning individual success into regional momentum.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="learn-more-btn" onclick="toggleProject(this)">Learn More <span class="arrow">&rarr;</span></button>
-                    <a href="http://agrihub.donummod.com/" class="cta-button" target="_blank" rel="noopener noreferrer">Partner With Us</a>
+                <h2>Current Focus Areas</h2>
+                <p class="section-intro">A short view of what we are actively supporting.</p>
+                <div class="projects-grid short-projects">
+                    <article class="project-card short">
+                        <h4>Financial Clarity Access</h4>
+                        <p>Helping people and businesses make better financial decisions through Insure-Fi pathways.</p>
+                    </article>
+                    <article class="project-card short">
+                        <h4>Full-Stack Innovation Delivery</h4>
+                        <p>Building practical systems and product capability through Complete Tech services.</p>
+                    </article>
+                    <article class="project-card short">
+                        <h4>Agriculture Opportunity Systems</h4>
+                        <p>Supporting resilient production and value-chain growth through Agrihub initiatives.</p>
+                    </article>
                 </div>
-
-                <!-- Additional Project Cards -->
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h4>MarketLink Mastery</h4>
-                        <div class="project-content">
-                            <p><strong>Focus:</strong> Commodity trading training + direct market access</p>
-                            <p>We empower farmers with market analysis skills, pricing strategies, and direct buyer connections to break free from exploitative middlemen.</p>
-                            <p>Our comprehensive program covers market trend analysis, negotiation tactics, contract management, and building lasting buyer relationships. Farmers learn to identify optimal selling windows and access premium markets.</p>
-                        </div>
-                        <div class="outcome-highlight">
-                            <strong>Outcome:</strong> 30–50% better prices and stable buyer relationships
-                        </div>
-                        <button class="learn-more-btn" onclick="toggleProject(this)">Learn More <span class="arrow">&rarr;</span></button>
-                    </div>
-
-                    <div class="project-card">
-                        <h4>EcoLand Optimise</h4>
-                        <div class="project-content">
-                            <p><strong>Focus:</strong> Resource optimisation + innovative landscaping</p>
-                            <p>Through precision water conservation, soil health testing, agroforestry, and biodiversity designs, we regenerate land while boosting yields.</p>
-                            <p>We implement contour farming, keyline design, cover cropping, and integrated pest management. Our approach restores soil microbiomes, enhances water retention, and creates resilient farm ecosystems.</p>
-                        </div>
-                        <div class="outcome-highlight">
-                            <strong>Outcome:</strong> Regenerated soils, 40% less water use, biodiversity boost
-                        </div>
-                        <button class="learn-more-btn" onclick="toggleProject(this)">Learn More <span class="arrow">&rarr;</span></button>
-                    </div>
-
-                    <div class="project-card">
-                        <h4>AgriLogistics Hub</h4>
-                        <div class="project-content">
-                            <p><strong>Focus:</strong> Logistics management + end-to-end supply chain</p>
-                            <p>Cooperative storage solutions, optimised transport routes, and inventory systems ensure produce reaches market fresh and profitable.</p>
-                            <p>We establish community collection centers, implement cold chain management, coordinate group transport, and use data-driven routing to minimize delays and maximize freshness.</p>
-                        </div>
-                        <div class="outcome-highlight">
-                            <strong>Outcome:</strong> 35–50% reduction in post-harvest losses, faster market delivery
-                        </div>
-                        <button class="learn-more-btn" onclick="toggleProject(this)">Learn More <span class="arrow">&rarr;</span></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="Tech-tools">
-            <div class="container">
-                <h2>Tech Integration</h2>
-                <p>We are committed to leveraging technology to empower communities.</p>
-                <a href="https://completetech.donummod.com/" class="cta-button" target="_blank" rel="noopener noreferrer">
-                Visit Complete <span class="arrow">&rarr;</span>
-            </a>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
                 <h2>Get in Touch</h2>
-                <p>Let's work together to build a brighter future. Reach out to us to discuss how we can partner with your community.</p>
+                <p>Tell us which service tab fits your need, and we will guide your next step.</p>
                 <div class="contact-details">
                     <p class="contact-info"><strong>Email:</strong> <a href="mailto:neo.amodibedi@gmail.com">neo.amodibedi@gmail.com</a></p>
                     <p class="contact-info"><strong>Phone:</strong> 060 960 1294</p>
@@ -193,23 +151,43 @@
                 <a href="https://x.com/donummod?s=11" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
                 <a href="https://wa.me/+27609601294" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p>&copy; 2024 Donum Mod. All Rights Reserved.</p>
+            <p>&copy; <span id="year"></span> Donum Mod. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        function toggleProject(button) {
-            const projectCard = button.closest('.project-card');
-            projectCard.classList.toggle('expanded');
-            
-            // Update button text
-            if (projectCard.classList.contains('expanded')) {
-                button.innerHTML = 'Show Less <span class="arrow">&darr;</span>';
-            } else {
-                button.innerHTML = 'Learn More <span class="arrow">&rarr;</span>';
-            }
-        }
-    </script>
+        document.getElementById('year').textContent = new Date().getFullYear();
 
+        const menuToggle = document.getElementById('menu-toggle');
+        const primaryNav = document.getElementById('primary-nav');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.classList.toggle('open');
+            menuToggle.classList.toggle('open', isOpen);
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        primaryNav.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                primaryNav.classList.remove('open');
+                menuToggle.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        const serviceCards = document.querySelectorAll('.service-tab-card');
+
+        function setActiveServiceCard(card) {
+            serviceCards.forEach((item) => item.classList.remove('active'));
+            card.classList.add('active');
+        }
+
+        serviceCards.forEach((card) => {
+            card.addEventListener('click', () => setActiveServiceCard(card));
+            card.querySelectorAll('a').forEach((anchor) => {
+                anchor.addEventListener('click', () => setActiveServiceCard(card));
+            });
+        });
+    </script>
 </body>
 </html>
